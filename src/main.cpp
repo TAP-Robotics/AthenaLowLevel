@@ -32,8 +32,6 @@ void loop() {
   float ert = getErraticTargetPosition();
   pdiker.calculatePID(leftMotor, ert, menc.MENC_A_POS);
   pdiker.calculatePID(rightMotor, ert, menc.MENC_B_POS);
-  Serial.print(ert);
-  Serial.print(" ");
   Serial.print(menc.MENC_A_POS);
   Serial.print(" ");
   Serial.println(menc.MENC_B_POS);
